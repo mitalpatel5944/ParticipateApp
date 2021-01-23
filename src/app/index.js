@@ -33,7 +33,7 @@ export default class App extends Component {
       <PaperProvider theme={theme}>
         <View style={{ flex: 1 }}>
           <StatusBar backgroundColor={colors.blue} barStyle={'dark'} />
-          <Router />
+          {this.state.Splash ? <Landing /> : <Router />}
         </View>
       </PaperProvider>
     );

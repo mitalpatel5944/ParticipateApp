@@ -9,12 +9,12 @@ class Landing extends Component {
 
   renderLoading = () => (
     <View>
-      <Text style={{ fontFamily: fonts.pbo, alignSelf: 'center', fontSize: 20 }}>Welcome...</Text>
+      <Text style={{ fontFamily: fonts.pbo, alignSelf: 'center', fontSize: 40, color: colors.white }}>Welcome...</Text>
     </View>
   );
 
   render() {
-    return <View style={{ backgroundColor: colors.warning, flex: 1, justifyContent: 'center' }}>{this.renderLoading()}</View>;
+    return <View style={{ backgroundColor: colors.blue, flex: 1, justifyContent: 'center' }}>{this.renderLoading()}</View>;
   }
 
 }

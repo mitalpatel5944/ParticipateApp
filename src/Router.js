@@ -14,28 +14,13 @@ function ParticipateStack() {
     return (
         <Stack.Navigator screenOptions={({ route, navigation }) => ({
             headerShown: false,
-
         })}
-        // mode={'card'}
         >
             <Stack.Screen name="Participate" component={Participate} />
             <Stack.Screen name="Detail" component={Detail} />
         </Stack.Navigator>
     );
 }
-
-// const getTabBarVisibility = (route) => {
-//     const routeName = route.state
-//         ? route.state.routes[route.state.index].name
-//         : '';
-
-//     if (routeName === 'Participate') {
-//         return true;
-//     }
-
-//     return false;
-
-// }
 
 function getTabBarVisibility(route) {
     const routeName = getFocusedRouteNameFromRoute(route) ?? 'Participate';
@@ -59,7 +44,6 @@ function Router() {
     return (
         <NavigationContainer>
             <Tab.Navigator
-
                 initialRouteName="Participate"
                 tabBarOptions={{
                     activeTintColor: colors.blue,
