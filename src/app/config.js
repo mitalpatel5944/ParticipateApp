@@ -1,2 +1,2 @@
-export const URL = "http://esptiles.imperoserver.in";
+export const URL = "";
 export const DEFAULT_LANGUAGE = "en";
